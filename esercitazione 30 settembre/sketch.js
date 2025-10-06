@@ -11,9 +11,7 @@ function setup() {
 
 function draw() {
   background("#191970");
-  //mostrare un testo bianco
-  //che dice le coordinate del mouse
-  //sul foglio da disegno
+  //mostrare un testo bianco che dice le coordinate del mouse sul foglio da disegno
   fill(255); //bianco
   //stringa x, y
   text("mouseX: " + mouseX + ",  mouseY: " + mouseY,20,20); //mi dice la posizione del mouse sul foglio
