@@ -10,6 +10,7 @@ let star_img;
 function preload() { //carica le risorse, prima del setup, es. dati, immagini ecc.
   table = loadTable("stars.csv", "csv", "header"); //tabella dati csv
   star_img = loadImage("star.png"); //immagine stella
+  rocket_img = loadImage("rocket.png"); //immagine razzo
 }
 
 function setup() {
@@ -64,7 +65,7 @@ function drawStars(num_stars=120) {
 }
 
 function drawRocketFromFile(xRocket, yRocket) {
-  image(rocket_img, xRocket, yRocket);
+  image(rocket_img, xRocket, yRocket, 50, 50); //50 e 50 sono le dimensioni
 }
 
 function drawRocket (xRocket, yRocket) {
